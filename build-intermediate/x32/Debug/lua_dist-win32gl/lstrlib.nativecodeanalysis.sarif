@@ -1,0 +1,712 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'ms->capture'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                },
+                "region": {
+                  "startLine": 334,
+                  "startColumn": 3,
+                  "endLine": 334,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_capture",
+                  "decoratedName": "start_capture",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 331,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 332,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 333,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'level>=32')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 333,
+                            "startColumn": 33
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 334,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'ms->capture[32]', (writable range is 0 to 31)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'src' contains the same NULL value as 'e' did. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                },
+                "region": {
+                  "startLine": 672,
+                  "startColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "str_gsub",
+                  "decoratedName": "str_gsub",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 645,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 646,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 647,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 648,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 649,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 650,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 651,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 652,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 653,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 654,
+                            "startColumn": 3
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 657,
+                            "startColumn": 3
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 658,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 659,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 660,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 661,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 662,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 663,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 664,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 665,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 666,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 667,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 669,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 670,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 674,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 661,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 662,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 663,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 664,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 665,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "'src' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 669,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'e&&e>src' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 671,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'src<ms.src_end')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 672,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+                          },
+                          "region": {
+                            "startLine": 672,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'src' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/lstrlib.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "207703835595b62a0e9c43b0f89ade77804ae1b80854acb1d6a591f3a7e3d700"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lua.h"
+          },
+          "hashes": {
+            "sha-256": "9a8ee0cb834877ad723a6bd29f92385376dea5f012d32f9e181388c33820c5a3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/luaconf.h"
+          },
+          "hashes": {
+            "sha-256": "f4cca7833b245e05a2fe09d77f013a1a4c0762f68cf4f6857ea1a9c51caeedab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lauxlib.h"
+          },
+          "hashes": {
+            "sha-256": "82d7bcc075308fd1dcee8a8766ab69cda6945624fc4899021e5e971717df1b59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lualib.h"
+          },
+          "hashes": {
+            "sha-256": "fdc28369da6fffb836b744b8a6d4b78d386e2b7348247f5cf3246b421d9f0439"
+          }
+        }
+      ]
+    }
+  ]
+}

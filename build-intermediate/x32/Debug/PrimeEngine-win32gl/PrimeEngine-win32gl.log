@@ -1,0 +1,15 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(541,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build.
+  SkeletonCPU.cpp
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(251,39): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(251,28): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(259,39): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(259,28): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(294,40): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(294,29): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(302,40): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(302,29): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(344,41): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(344,30): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(352,41): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(352,30): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+  PrimeEngine-win32gl.vcxproj -> D:\CSCI522\PEWorkspace\build\PrimeEngine-win32gl.lib

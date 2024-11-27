@@ -1,0 +1,379 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'MemoryPool::m_freeBlockList' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/MemoryManagement/MemoryPool.h"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MemoryPool::{ctor}",
+                  "decoratedName": "??0MemoryPool@@AAE@II@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MemoryPool::m_freeBlockList"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Threading::Mutex::m_threadId' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Threading/Threading.h"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Threading::Mutex::{ctor}",
+                  "decoratedName": "??0Mutex@Threading@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Threading::Mutex::m_threadId"
+          }
+        },
+        {
+          "ruleId": "C28183",
+          "message": {
+            "text": "'m_osThread' could be '0', and is a copy of the value found in '_beginthreadex()`225':  this does not adhere to the specification for the function 'ResumeThread'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Threading/Threading.h"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 4,
+                  "endLine": 231,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Threading::PEThread::run",
+                  "decoratedName": "?run@PEThread@Threading@PE@@QAEXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 216,
+                            "startColumn": 12
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 224,
+                            "startColumn": 17
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 225,
+                            "startColumn": 15
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 231,
+                            "startColumn": 16
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::GlobalRegistry::m_metaInfos' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Utils/PEClassDecl.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::GlobalRegistry::{ctor}",
+                  "decoratedName": "??0GlobalRegistry@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::GlobalRegistry::m_metaInfos"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::MetaInfo::m_superClasses' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Utils/PEClassDecl.h"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::MetaInfo::{ctor}",
+                  "decoratedName": "??0MetaInfo@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::MetaInfo::m_superClasses"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/MemoryManagement/MemoryPool.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0edbd4cb245e2d17aa5987c7d7049c65fc948fbb2d3da0d6a264ba3899205536"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Threading/Threading.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b4675a8cbfb1591a6c4abada0511ac9f994ae9c59af26bea9ff78df6105a37e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Utils/PEClassDecl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "fe2f9f4ed4c5c71917cff1396782ecd7de3655f438efca70f431b22bc7866330"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/positionbuffercpu/positionbuffercpu.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "d25fd6d3d0b76dc6151f83af9d1a324463c03ce025f3d5be285002798a1397b0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/apiabstractiondefines.h"
+          },
+          "hashes": {
+            "sha-256": "36773c3305db021b95e271937c2a7d7db9fa92a368be0109d760c28ac35d6583"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/positionbuffercpu/positionbuffercpu.h"
+          },
+          "hashes": {
+            "sha-256": "b48c8a7b16f62864743c9f2dd65ea04c67eae06ab5bd593fdbd25a45ebf8f9af"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/memorymanagement/handle.h"
+          },
+          "hashes": {
+            "sha-256": "de688c401dd52e501da23ea35d2b35a545303702f9b0f4830fb02018d590c2f2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/memorymanagement/memorymanager.h"
+          },
+          "hashes": {
+            "sha-256": "5385a2612102e86418f48950d144c33024c64d8f0cf7b5805ba114a456087668"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/errorhandling.h"
+          },
+          "hashes": {
+            "sha-256": "df2613a450d637a45d277b10d4fa571346f23602a4963888ff1b11b8cb490949"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/primitivetypes/primitivetypes.h"
+          },
+          "hashes": {
+            "sha-256": "d9bddab46e9d990e7800cb2b86eda3aef3b8e83539d073dedc027e2a687d0631"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/globalconfig/globalconfig.h"
+          },
+          "hashes": {
+            "sha-256": "733b97decb69f985552e1bddc326ca7ba1189e0353c653364da94c66ad6fdd1f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/array/array.h"
+          },
+          "hashes": {
+            "sha-256": "fd0cd7a0aa5d1691f1e02e4ac49a100c03958da68db69e1be2c98acea15cd7e1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/stringops.h"
+          },
+          "hashes": {
+            "sha-256": "e24774c8b41fb39f3570c1e04eb24f1c15a0a8316899227e51d2f38d45d30b8e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/game/common/gamecontext.h"
+          },
+          "hashes": {
+            "sha-256": "51ade24b6ef277db66c4d8954aedb79c0c69ed93cce56111ba678660b9ed2725"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/filesystem/filereader.h"
+          },
+          "hashes": {
+            "sha-256": "afed4c0837ae5bc00acf633a6624f7ee7f40af652798f0a8b65dc645cddfe393"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/mainfunction/mainfunctionargs.h"
+          },
+          "hashes": {
+            "sha-256": "848db16ca21f457afc13b9d475af7253e9358744a4b8c3b96524783366083eed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/pestring.h"
+          },
+          "hashes": {
+            "sha-256": "59f3d7bf132463c4e51bdaaf072cbf4179f55a4cdb2df7fa134892fc08dffbec"
+          }
+        }
+      ]
+    }
+  ]
+}

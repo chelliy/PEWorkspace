@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/errorhandling.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "59cf460eca9b2bcff066b36eff38d794ce5bbdb6f1e4c564f2c49e3e084bb85d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/apiabstractiondefines.h"
+          },
+          "hashes": {
+            "sha-256": "36773c3305db021b95e271937c2a7d7db9fa92a368be0109d760c28ac35d6583"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/errorhandling.h"
+          },
+          "hashes": {
+            "sha-256": "df2613a450d637a45d277b10d4fa571346f23602a4963888ff1b11b8cb490949"
+          }
+        }
+      ]
+    }
+  ]
+}

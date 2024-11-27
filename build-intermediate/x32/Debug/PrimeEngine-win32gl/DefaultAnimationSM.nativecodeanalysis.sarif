@@ -1,0 +1,3290 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'MemoryPool::m_freeBlockList' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/MemoryManagement/MemoryPool.h"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MemoryPool::{ctor}",
+                  "decoratedName": "??0MemoryPool@@AAE@II@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MemoryPool::m_freeBlockList"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Threading::Mutex::m_threadId' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Threading/Threading.h"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Threading::Mutex::{ctor}",
+                  "decoratedName": "??0Mutex@Threading@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Threading::Mutex::m_threadId"
+          }
+        },
+        {
+          "ruleId": "C28183",
+          "message": {
+            "text": "'m_osThread' could be '0', and is a copy of the value found in '_beginthreadex()`225':  this does not adhere to the specification for the function 'ResumeThread'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Threading/Threading.h"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 4,
+                  "endLine": 231,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Threading::PEThread::run",
+                  "decoratedName": "?run@PEThread@Threading@PE@@QAEXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 216,
+                            "startColumn": 12
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 224,
+                            "startColumn": 17
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 225,
+                            "startColumn": 15
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/threading/threading.h"
+                          },
+                          "region": {
+                            "startLine": 231,
+                            "startColumn": 16
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::GlobalRegistry::m_metaInfos' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Utils/PEClassDecl.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::GlobalRegistry::{ctor}",
+                  "decoratedName": "??0GlobalRegistry@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::GlobalRegistry::m_metaInfos"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::MetaInfo::m_superClasses' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Utils/PEClassDecl.h"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::MetaInfo::{ctor}",
+                  "decoratedName": "??0MetaInfo@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::MetaInfo::m_superClasses"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_GATHER_DRAWCALLS::m_drawOrder' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_GATHER_DRAWCALLS::{ctor}",
+                  "decoratedName": "??0Event_GATHER_DRAWCALLS@Events@PE@@QAE@AAH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_GATHER_DRAWCALLS::m_drawOrder"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_GATHER_DRAWCALLS::m_frameTime' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_GATHER_DRAWCALLS::{ctor}",
+                  "decoratedName": "??0Event_GATHER_DRAWCALLS@Events@PE@@QAE@AAH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_GATHER_DRAWCALLS::m_frameTime"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_GATHER_DRAWCALLS::m_gameTime' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_GATHER_DRAWCALLS::{ctor}",
+                  "decoratedName": "??0Event_GATHER_DRAWCALLS@Events@PE@@QAE@AAH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_GATHER_DRAWCALLS::m_gameTime"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_IK_REPORT::m_angleTurned' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_IK_REPORT::{ctor}",
+                  "decoratedName": "??0Event_IK_REPORT@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_IK_REPORT::m_angleTurned"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_IK_REPORT::m_angleNeeded' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_IK_REPORT::{ctor}",
+                  "decoratedName": "??0Event_IK_REPORT@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_IK_REPORT::m_angleNeeded"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_IK_REPORT::m_turnRight' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_IK_REPORT::{ctor}",
+                  "decoratedName": "??0Event_IK_REPORT@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_IK_REPORT::m_turnRight"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_CREATE_LIGHT::m_type' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_CREATE_LIGHT::{ctor}",
+                  "decoratedName": "??0Event_CREATE_LIGHT@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_CREATE_LIGHT::m_type"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_CREATE_LIGHT::m_range' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_CREATE_LIGHT::{ctor}",
+                  "decoratedName": "??0Event_CREATE_LIGHT@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_CREATE_LIGHT::m_range"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_CREATE_LIGHT::m_spotPower' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_CREATE_LIGHT::{ctor}",
+                  "decoratedName": "??0Event_CREATE_LIGHT@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_CREATE_LIGHT::m_spotPower"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_CREATE_LIGHT::m_isShadowCaster' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_CREATE_LIGHT::{ctor}",
+                  "decoratedName": "??0Event_CREATE_LIGHT@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_CREATE_LIGHT::m_isShadowCaster"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_CREATE_NAVGRID::gridFileName' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_CREATE_NAVGRID::{ctor}",
+                  "decoratedName": "??0Event_CREATE_NAVGRID@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_CREATE_NAVGRID::gridFileName"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_CREATE_NAVGRID::gridMeshName' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_CREATE_NAVGRID::{ctor}",
+                  "decoratedName": "??0Event_CREATE_NAVGRID@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_CREATE_NAVGRID::gridMeshName"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_SET_DEBUG_TARGET_HANDLE::m_debugEvent' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 344,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_SET_DEBUG_TARGET_HANDLE::{ctor}",
+                  "decoratedName": "??0Event_SET_DEBUG_TARGET_HANDLE@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_SET_DEBUG_TARGET_HANDLE::m_debugEvent"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Events::Event_CHARACTER_HIT_BY_MELEE::force' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+                },
+                "region": {
+                  "startLine": 383,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Events::Event_CHARACTER_HIT_BY_MELEE::{ctor}",
+                  "decoratedName": "??0Event_CHARACTER_HIT_BY_MELEE@Events@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Events::Event_CHARACTER_HIT_BY_MELEE::force"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::TextureGPU::m_frameBufferObject' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Texture/Texture.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::TextureGPU::{ctor}",
+                  "decoratedName": "??0TextureGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::TextureGPU::m_frameBufferObject"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::TextureGPU::m_texture' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Texture/Texture.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::TextureGPU::{ctor}",
+                  "decoratedName": "??0TextureGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::TextureGPU::m_texture"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::TextureGPU::m_family' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Texture/Texture.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::TextureGPU::{ctor}",
+                  "decoratedName": "??0TextureGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::TextureGPU::m_family"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::TextureGPU::m_viewport' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Texture/Texture.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::TextureGPU::{ctor}",
+                  "decoratedName": "??0TextureGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::TextureGPU::m_viewport"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::GPUMaterial::m_dbgName' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUMaterial/GPUMaterial.h"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::GPUMaterial::{ctor}",
+                  "decoratedName": "??0GPUMaterial@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::GPUMaterial::m_dbgName"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::GPUMaterial::m_shininess' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUMaterial/GPUMaterial.h"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::GPUMaterial::{ctor}",
+                  "decoratedName": "??0GPUMaterial@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::GPUMaterial::m_shininess"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'IndexRange::BoneSegment::m_start' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/IndexBufferCPU/IndexBufferCPU.h"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "IndexRange::BoneSegment::{ctor}",
+                  "decoratedName": "??0BoneSegment@IndexRange@@QAE@AAUGameContext@PE@@W4MemoryArena@3@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "IndexRange::BoneSegment::m_start"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'IndexRange::BoneSegment::m_end' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/IndexBufferCPU/IndexBufferCPU.h"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "IndexRange::BoneSegment::{ctor}",
+                  "decoratedName": "??0BoneSegment@IndexRange@@QAE@AAUGameContext@PE@@W4MemoryArena@3@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "IndexRange::BoneSegment::m_end"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'IndexBufferCPU::m_verticesPerPolygon' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/IndexBufferCPU/IndexBufferCPU.h"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "IndexBufferCPU::{ctor}",
+                  "decoratedName": "??0IndexBufferCPU@@QAE@AAUGameContext@PE@@W4MemoryArena@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "IndexBufferCPU::m_verticesPerPolygon"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'IndexBufferCPU::m_maxVertexIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/IndexBufferCPU/IndexBufferCPU.h"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "IndexBufferCPU::{ctor}",
+                  "decoratedName": "??0IndexBufferCPU@@QAE@AAUGameContext@PE@@W4MemoryArena@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "IndexBufferCPU::m_maxVertexIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'IndexBufferCPU::m_primitiveTopology' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/IndexBufferCPU/IndexBufferCPU.h"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "IndexBufferCPU::{ctor}",
+                  "decoratedName": "??0IndexBufferCPU@@QAE@AAUGameContext@PE@@W4MemoryArena@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "IndexBufferCPU::m_primitiveTopology"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'IndexBufferCPU::m_minVertexIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/IndexBufferCPU/IndexBufferCPU.h"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "IndexBufferCPU::{ctor}",
+                  "decoratedName": "??0IndexBufferCPU@@QAE@AAUGameContext@PE@@W4MemoryArena@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "IndexBufferCPU::m_minVertexIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::IndexBufferGPU::m_verticesPerPolygon' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::IndexBufferGPU::{ctor}",
+                  "decoratedName": "??0IndexBufferGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::IndexBufferGPU::m_verticesPerPolygon"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::IndexBufferGPU::m_apiTopology' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::IndexBufferGPU::{ctor}",
+                  "decoratedName": "??0IndexBufferGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::IndexBufferGPU::m_apiTopology"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::IndexBufferGPU::m_maxVertexIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::IndexBufferGPU::{ctor}",
+                  "decoratedName": "??0IndexBufferGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::IndexBufferGPU::m_maxVertexIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::IndexBufferGPU::m_buf' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::IndexBufferGPU::{ctor}",
+                  "decoratedName": "??0IndexBufferGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::IndexBufferGPU::m_buf"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::IndexBufferGPU::m_primitiveTopology' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::IndexBufferGPU::{ctor}",
+                  "decoratedName": "??0IndexBufferGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::IndexBufferGPU::m_primitiveTopology"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::IndexBufferGPU::m_minVertexIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::IndexBufferGPU::{ctor}",
+                  "decoratedName": "??0IndexBufferGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::IndexBufferGPU::m_minVertexIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::IndexBufferGPU::m_length' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::IndexBufferGPU::{ctor}",
+                  "decoratedName": "??0IndexBufferGPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::IndexBufferGPU::m_length"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::PERasterizerState::m_apiFillMode' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/PERasterizerState.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::PERasterizerState::{ctor}",
+                  "decoratedName": "??0PERasterizerState@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::PERasterizerState::m_apiFillMode"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::PERasterizerState::m_pContext' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/PERasterizerState.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::PERasterizerState::{ctor}",
+                  "decoratedName": "??0PERasterizerState@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::PERasterizerState::m_pContext"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::PERasterizerState::m_arena' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/PERasterizerState.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::PERasterizerState::{ctor}",
+                  "decoratedName": "??0PERasterizerState@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::PERasterizerState::m_arena"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::PERasterizerState::m_cullMode' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/PERasterizerState.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::PERasterizerState::{ctor}",
+                  "decoratedName": "??0PERasterizerState@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::PERasterizerState::m_cullMode"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::PERasterizerState::m_apiCullMode' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/PERasterizerState.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::PERasterizerState::{ctor}",
+                  "decoratedName": "??0PERasterizerState@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::PERasterizerState::m_apiCullMode"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::PERasterizerState::m_fillMode' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/PERasterizerState.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::PERasterizerState::{ctor}",
+                  "decoratedName": "??0PERasterizerState@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::PERasterizerState::m_fillMode"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationSlot::m_startJoint' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationSlot::{ctor}",
+                  "decoratedName": "??0AnimationSlot@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationSlot::m_startJoint"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationSlot::m_endJoint' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationSlot::{ctor}",
+                  "decoratedName": "??0AnimationSlot@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationSlot::m_endJoint"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationSlot::m_frameIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationSlot::{ctor}",
+                  "decoratedName": "??0AnimationSlot@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationSlot::m_frameIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationSlot::m_animationIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationSlot::{ctor}",
+                  "decoratedName": "??0AnimationSlot@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationSlot::m_animationIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationSlot::m_animationSetIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationSlot::{ctor}",
+                  "decoratedName": "??0AnimationSlot@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationSlot::m_animationSetIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationCPU::m_numJoints' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationCPU::{ctor}",
+                  "decoratedName": "??0AnimationCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationCPU::m_numJoints"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationCPU::m_endJoint' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationCPU::{ctor}",
+                  "decoratedName": "??0AnimationCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationCPU::m_endJoint"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationCPU::m_startJoint' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+                },
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationCPU::{ctor}",
+                  "decoratedName": "??0AnimationCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationCPU::m_startJoint"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimSpeedSet::m_filename' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationSetCPU.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimSpeedSet::{ctor}",
+                  "decoratedName": "??0AnimSpeedSet@PE@@QAE@AAUGameContext@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimSpeedSet::m_filename"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimSpeedSet::m_v64' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationSetCPU.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimSpeedSet::{ctor}",
+                  "decoratedName": "??0AnimSpeedSet@PE@@QAE@AAUGameContext@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimSpeedSet::m_v64"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimNameSet::m_size' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationSetCPU.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimNameSet::{ctor}",
+                  "decoratedName": "??0AnimNameSet@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimNameSet::m_size"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::AnimationSetCPU::m_name' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationSetCPU.h"
+                },
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::AnimationSetCPU::{ctor}",
+                  "decoratedName": "??0AnimationSetCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::AnimationSetCPU::m_name"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerFrameConstantsShaderAction::m_data' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerFrameConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerFrameConstantsShaderAction::{ctor}",
+                  "decoratedName": "??0SetPerFrameConstantsShaderAction@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerFrameConstantsShaderAction::m_data"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::m_nameToData' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::{ctor}",
+                  "decoratedName": "??0SetPerObjectGroupConstantsShaderAction@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::m_nameToData"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::Data::gDoMotionBlur' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::Data::{ctor}",
+                  "decoratedName": "??0Data@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::Data::gDoMotionBlur"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::spotPower' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::{ctor}",
+                  "decoratedName": "??0hlsl_Light@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::spotPower"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::type' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::{ctor}",
+                  "decoratedName": "??0hlsl_Light@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::type"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::range' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::{ctor}",
+                  "decoratedName": "??0hlsl_Light@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::range"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad1' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::{ctor}",
+                  "decoratedName": "??0hlsl_Light@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad1"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad0' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::{ctor}",
+                  "decoratedName": "??0hlsl_Light@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad0"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad2' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::{ctor}",
+                  "decoratedName": "??0hlsl_Light@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad2"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad3' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::{ctor}",
+                  "decoratedName": "??0hlsl_Light@SetPerObjectGroupConstantsShaderAction@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SetPerObjectGroupConstantsShaderAction::hlsl_Light::pad3"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SpeShader::m_id' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/SpeShader.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SpeShader::{ctor}",
+                  "decoratedName": "??0SpeShader@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@UHandle@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SpeShader::m_id"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::JointCPU::m_name' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::JointCPU::{ctor}",
+                  "decoratedName": "??0JointCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::JointCPU::m_name"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::JointCPU::m_matrix' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::JointCPU::{ctor}",
+                  "decoratedName": "??0JointCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::JointCPU::m_matrix"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::JointCPU::m_index' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::JointCPU::{ctor}",
+                  "decoratedName": "??0JointCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::JointCPU::m_index"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::FastJoint::m_index' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::FastJoint::{ctor}",
+                  "decoratedName": "??0FastJoint@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::FastJoint::m_index"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::FastJoint::m_pJointCPU' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::FastJoint::{ctor}",
+                  "decoratedName": "??0FastJoint@PE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::FastJoint::m_pJointCPU"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SkeletonCPU::m_numJoints' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SkeletonCPU::{ctor}",
+                  "decoratedName": "??0SkeletonCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SkeletonCPU::m_numJoints"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::SkeletonCPU::m_name' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::SkeletonCPU::{ctor}",
+                  "decoratedName": "??0SkeletonCPU@PE@@QAE@AAUGameContext@1@W4MemoryArena@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::SkeletonCPU::m_name"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Components::DrawList::m_pCurInstanceVertBuf' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DrawList.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Components::DrawList::{ctor}",
+                  "decoratedName": "??0DrawList@Components@PE@@QAE@AAUGameContext@2@W4MemoryArena@2@UHandle@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Components::DrawList::m_pCurInstanceVertBuf"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Components::DrawList::m_pCurOutput' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DrawList.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Components::DrawList::{ctor}",
+                  "decoratedName": "??0DrawList@Components@PE@@QAE@AAUGameContext@2@W4MemoryArena@2@UHandle@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Components::DrawList::m_pCurOutput"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Components::DrawList::m_pCurEffect' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DrawList.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Components::DrawList::{ctor}",
+                  "decoratedName": "??0DrawList@Components@PE@@QAE@AAUGameContext@2@W4MemoryArena@2@UHandle@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Components::DrawList::m_pCurEffect"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Components::DrawList::m_pCurIndBuf' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DrawList.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Components::DrawList::{ctor}",
+                  "decoratedName": "??0DrawList@Components@PE@@QAE@AAUGameContext@2@W4MemoryArena@2@UHandle@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Components::DrawList::m_pCurIndBuf"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Components::DrawList::m_pCurVertBuf' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DrawList.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Components::DrawList::{ctor}",
+                  "decoratedName": "??0DrawList@Components@PE@@QAE@AAUGameContext@2@W4MemoryArena@2@UHandle@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Components::DrawList::m_pCurVertBuf"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'PE::Components::DefaultAnimationSM::m_instanceCSJobIndex' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DefaultAnimationSM.cpp"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PE::Components::DefaultAnimationSM::{ctor}",
+                  "decoratedName": "??0DefaultAnimationSM@Components@PE@@QAE@AAUGameContext@2@W4MemoryArena@2@UHandle@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "PE::Components::DefaultAnimationSM::m_instanceCSJobIndex"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/MemoryManagement/MemoryPool.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0edbd4cb245e2d17aa5987c7d7049c65fc948fbb2d3da0d6a264ba3899205536"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Threading/Threading.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b4675a8cbfb1591a6c4abada0511ac9f994ae9c59af26bea9ff78df6105a37e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Utils/PEClassDecl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "fe2f9f4ed4c5c71917cff1396782ecd7de3655f438efca70f431b22bc7866330"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Events/StandardEvents.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "34844a2c487eb37286473532fa0483beac7887c1262da067d5d818f285da3cb5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Texture/Texture.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "2a70b669de9a1189313b0ca7130f6cfb0cb2f4c4654c8e936eb88384c7668c25"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUMaterial/GPUMaterial.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "09b6478def058f33ab25ccd13ac1d64fa2b0eb7f9d79681b40aa79dbb2d60468"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/IndexBufferCPU/IndexBufferCPU.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "23657a7bdeeb1556cb12606f31d58bb86186e85f159ee44461bd5d2c7c514ffd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/GPUBuffers/IndexBufferGPU.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "51444349f4df5f7179177621ca0cae916a8ff017bd667fc3e6f270f0f844a2f0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/PERasterizerState.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "10b0d15c0bf257522f5ee017b28e081b53bd76a2b8e86fe77fcc9e2e4ba49221"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationCPU.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "33a04637184d71acb7d68d158a7493e114a61f7c426cd9ca3fb5d696ef50637a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/AnimationSetCPU.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "946f4d7225b8fe0c5daad94e5ab20435f65bf6f5165fa2abdff3eca2e29b1d5e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerFrameConstantsShaderAction.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "f6ff26a97fd27c6a2557edee545faaafa9d08884573506dceff0cdd2d52e1e30"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Render/ShaderActions/SetPerObjectGroupConstantsShaderAction.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "777b57db2e574fe4904c0451b151751f920eff617fc21fb1837060082f172762"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/APIAbstraction/Effect/SpeShader.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "674749b9bfc8196766cebd5fbed40dd8dfe32f417a1131260bce72d302d447b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "03d22795d4776960de2bf1f40218591bf24344b4a9a524282e2bd935ddeff263"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DrawList.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "a9fc36e7b5c55506bf8004ec0a4174804e52683de006810d111126acd799e651"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/Scene/DefaultAnimationSM.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "dfb95732bef9eb1b71c68320521d76c92d8f2f89242003231b45549df18f39d8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/apiabstractiondefines.h"
+          },
+          "hashes": {
+            "sha-256": "36773c3305db021b95e271937c2a7d7db9fa92a368be0109d760c28ac35d6583"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/filesystem/filereader.h"
+          },
+          "hashes": {
+            "sha-256": "afed4c0837ae5bc00acf633a6624f7ee7f40af652798f0a8b65dc645cddfe393"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/memorymanagement/handle.h"
+          },
+          "hashes": {
+            "sha-256": "de688c401dd52e501da23ea35d2b35a545303702f9b0f4830fb02018d590c2f2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/memorymanagement/memorymanager.h"
+          },
+          "hashes": {
+            "sha-256": "5385a2612102e86418f48950d144c33024c64d8f0cf7b5805ba114a456087668"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/errorhandling.h"
+          },
+          "hashes": {
+            "sha-256": "df2613a450d637a45d277b10d4fa571346f23602a4963888ff1b11b8cb490949"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/primitivetypes/primitivetypes.h"
+          },
+          "hashes": {
+            "sha-256": "d9bddab46e9d990e7800cb2b86eda3aef3b8e83539d073dedc027e2a687d0631"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/globalconfig/globalconfig.h"
+          },
+          "hashes": {
+            "sha-256": "733b97decb69f985552e1bddc326ca7ba1189e0353c653364da94c66ad6fdd1f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/stringops.h"
+          },
+          "hashes": {
+            "sha-256": "e24774c8b41fb39f3570c1e04eb24f1c15a0a8316899227e51d2f38d45d30b8e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/gpumaterial/gpumaterialset.h"
+          },
+          "hashes": {
+            "sha-256": "c95c4b744685f0955326c13209688f5082c239c4a81c669ccb0aae0567af785d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/irenderer.h"
+          },
+          "hashes": {
+            "sha-256": "e89412d651977969992a3819f1e03e2d7ffb06751001f5cad2f5109e57a9d2d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/math/vector4.h"
+          },
+          "hashes": {
+            "sha-256": "0d01c203389ccd64c914db1b05b68219b0c960902186b534b5884728e040eac3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/math/vector3.h"
+          },
+          "hashes": {
+            "sha-256": "610acd0b5e17f36446b7275507250b5c92c56a58b53f57dc3f34fca3a3df1ecf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/math/mathhelpers.h"
+          },
+          "hashes": {
+            "sha-256": "e74b66249a0ad1ceee36cd6c9cb16742d870190a725a2cd8bad87eab3132f615"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/game/common/gamecontext.h"
+          },
+          "hashes": {
+            "sha-256": "51ade24b6ef277db66c4d8954aedb79c0c69ed93cce56111ba678660b9ed2725"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/materialcpu/materialsetcpu.h"
+          },
+          "hashes": {
+            "sha-256": "78a77703c926bd0dc7ad32ec2c34c9c54f9395146acaf4c35eeed689f22cb36d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/array/array.h"
+          },
+          "hashes": {
+            "sha-256": "fd0cd7a0aa5d1691f1e02e4ac49a100c03958da68db69e1be2c98acea15cd7e1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/materialcpu/materialcpu.h"
+          },
+          "hashes": {
+            "sha-256": "a0f28ceb8692cfbabb38c8cd663574f912b4ada6c3569e1bc615e51cd7bf6985"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/pestring.h"
+          },
+          "hashes": {
+            "sha-256": "59f3d7bf132463c4e51bdaaf072cbf4179f55a4cdb2df7fa134892fc08dffbec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/texture/samplerstate.h"
+          },
+          "hashes": {
+            "sha-256": "9215cbaa2fb8a537784075bd42d49bd9504046c113b16f8eedfea7d6f341fa87"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/d3d11renderer.h"
+          },
+          "hashes": {
+            "sha-256": "4b825f9cfc75b340322847ed5dab78f9d012746757443ad2f2508d4f81f7efd0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/d3d9renderer.h"
+          },
+          "hashes": {
+            "sha-256": "cd53c6b17a13ad2d2ce69002f1600e932bf0a80a4b0b6cbdb48e4bf2662e7885"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/glrenderer.h"
+          },
+          "hashes": {
+            "sha-256": "603c78bd93376809d581cee28491638df1c1dc6a9ab8279d6a4be221dc99e889"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/application/winapplication.h"
+          },
+          "hashes": {
+            "sha-256": "d81c3bf59fea79c1ed89831b59174b77b2e0d838ad8b8ad30abddd8e70cee36a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/mainfunction/mainfunctionargs.h"
+          },
+          "hashes": {
+            "sha-256": "848db16ca21f457afc13b9d475af7253e9358744a4b8c3b96524783366083eed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/events/eventqueuemanager.h"
+          },
+          "hashes": {
+            "sha-256": "57c7773e181b553d97b2641d5a8d09812eafc00512fa710a2df511469e56c410"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/strtohandlemap.h"
+          },
+          "hashes": {
+            "sha-256": "83e86aff970d9d58e960de2514e9bb88971ce34a4a62db9e9a6fe38cd27aec85"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/events/eventqueue.h"
+          },
+          "hashes": {
+            "sha-256": "5a7ae23fd5b4f902cadaf94fc7f227c0600f90df468f2be4c1a6a710e6ce8fe8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/queue.h"
+          },
+          "hashes": {
+            "sha-256": "55b85def392c21d9a6952e6ecf8a0af8cb531c32d742eed6a8326558c003b84d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/events/event.h"
+          },
+          "hashes": {
+            "sha-256": "8ab5d8bd75d91e101a2a33fc31cca44bbceb77dce317f43718f79e68fbd13ca7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/peuuid.h"
+          },
+          "hashes": {
+            "sha-256": "56cb55e88fdc1c51fbde278b2de250878ea1caf2e28199b31bb3c64268147d09"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/math/matrix4x4.h"
+          },
+          "hashes": {
+            "sha-256": "f4261ea7c362b96c92709a3dfe195f1bd21682f8940f041d2476c4cc3a474d26"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/math/quaternion.h"
+          },
+          "hashes": {
+            "sha-256": "5af8272cb18a02984abeee9d7b6411a5936f41594fb7ebf4fd265d2694a03212"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/math/matrix3x3.h"
+          },
+          "hashes": {
+            "sha-256": "ab466b8450b767f1da8b9bc2b3033c3d850e3a7e96d4a1699ac05c009ba55894"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/effect/effectenums.h"
+          },
+          "hashes": {
+            "sha-256": "7167b0052fa58a3cb1c7af6252d8a9128fc84d8413cc6af658f6dc389c469cb1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/networkable.h"
+          },
+          "hashes": {
+            "sha-256": "f4359b3ca0edd30bc0f258429155269067a9334046535033383f58bfb7f345e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/networking/networkcontext.h"
+          },
+          "hashes": {
+            "sha-256": "a6b8d56d3a2e00dd835f6a93773310a7fe095768e746fbab10752015f32bba49"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/application/application.h"
+          },
+          "hashes": {
+            "sha-256": "49f1cab6bd768e5c007b325081b5d7b7fad559b80f6c277c3d600052dbb304ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/external/downloadedlibraries/glew-1.9.0/include/gl/glew.h"
+          },
+          "hashes": {
+            "sha-256": "df43804b10a33f960a142b87c557ce574a41d0463185ad82a075fd10948d6d09"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/external/downloadedlibraries/glew-1.9.0/include/gl/wglew.h"
+          },
+          "hashes": {
+            "sha-256": "a9034b7faf4a63b61da8799f65e46fd43122c5b0603c0016737f4451bc94104d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/external/downloadedlibraries/cg/include/cg/cg.h"
+          },
+          "hashes": {
+            "sha-256": "331ca85f22836982b1a956fa2bc2f19613c4eb4ad1d44e4a7bc4c437cd13b294"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/external/downloadedlibraries/cg/include/cg/cggl.h"
+          },
+          "hashes": {
+            "sha-256": "8df4cd40fbb3718f801fe93fe1193aa5533b9e9d2816adae1fa9a2f52049763b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/texture/texture_dds_loader_common.h"
+          },
+          "hashes": {
+            "sha-256": "de00a3f8ab264f508c287d8daa59c7cd8ebcf5dc70ce8d385e62f9ad54d682c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/texture/gputexturemanager.h"
+          },
+          "hashes": {
+            "sha-256": "dd8591c67681f8f6ff3b39f6c94d580203306e4d633ff2f11b53296e70b69c43"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/effect/effectmanager.h"
+          },
+          "hashes": {
+            "sha-256": "ba99804e593e02548204cdbb6b2a8ca8b322bff158e5f8ce303102a5591f91d7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/pemap.h"
+          },
+          "hashes": {
+            "sha-256": "02e63ebaa5768c78513bae18a41ee6bdd225be9cc728e8cae0af942c429cded8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/gpubuffers/vertexbuffergpu.h"
+          },
+          "hashes": {
+            "sha-256": "767a4783ea3c88615b89d5763be55d4b79eb1cce38d97cab66b382d3d493fbaa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/positionbuffercpu/positionbuffercpu.h"
+          },
+          "hashes": {
+            "sha-256": "b48c8a7b16f62864743c9f2dd65ea04c67eae06ab5bd593fdbd25a45ebf8f9af"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/tangentbuffercpu/tangentbuffercpu.h"
+          },
+          "hashes": {
+            "sha-256": "1183f05f18457d00839633bd85347211dd43552fcb422f9c16cd48994cf6265b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/texcoordbuffercpu/texcoordbuffercpu.h"
+          },
+          "hashes": {
+            "sha-256": "2d23df872ea9c1b43e409fc593e52f00489876ef55a7d4feecdfff6e323444fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/particlesystemcpu/particlebuffercpu.h"
+          },
+          "hashes": {
+            "sha-256": "dba44bc51f17dbd91ff761438e448f02a9ef897ca972827a2464c891cd2abba8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/skeletoncpu/skinweightscpu.h"
+          },
+          "hashes": {
+            "sha-256": "f8a0819aa47cf41898e89f997720155d107923bdb4a49383eddeb1e5e40336fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/normalbuffercpu/normalbuffercpu.h"
+          },
+          "hashes": {
+            "sha-256": "39600b1d4559eed86c45e23e1fd82f432100177a29de929db9afc0216711a5ee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/colorbuffercpu.h"
+          },
+          "hashes": {
+            "sha-256": "47edb9c5affff64f4b7300da7c2bf79f9e858f8141500b31b6b2d9fb6bb00d24"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/ogl/ogl_gpubuffers/ogl_vertexbuffergpu.h"
+          },
+          "hashes": {
+            "sha-256": "48482bf6e40dcc64d82b2686cb2b3340184a14b4adb9833354aac7256ab40960"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/gpubuffers/bufferinfo.h"
+          },
+          "hashes": {
+            "sha-256": "844f9d47b4baf141e3aeac17878a842c1a1ec648a8441fdb581ff2e5c7ced2d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/ogl/ogl_gpubuffers/ogl_indexbuffergpu.h"
+          },
+          "hashes": {
+            "sha-256": "c862a1cfa9bb63b9933dc83b161995ddbf01dd2029cd032a1a3157694ff369c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/effect/pealphablendstate.h"
+          },
+          "hashes": {
+            "sha-256": "f0db434c45e0789f97e748df9fd26c8f3820f5508e894ef6fb9a8be679780c95"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/effect/pedepthstencilstate.h"
+          },
+          "hashes": {
+            "sha-256": "a4fc53f78db9f4202b5a0ea345ce402bb08fce58944cc0c2417ec91e696a40e0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/math/tsq.h"
+          },
+          "hashes": {
+            "sha-256": "c32a01f36fce10b1ddf4074b2cc94d8dba7bc01cfb4babd16b85ddb6c4332438"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/meshinstance.h"
+          },
+          "hashes": {
+            "sha-256": "4dd1920bac17ecc609ed290250e6b4d203e6b79b81e5add770671a1f4f33fbda"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/effect/effect.h"
+          },
+          "hashes": {
+            "sha-256": "7852b91c9040640e4f62ecc4a2aaa6a17f73a1c48f9899b73a7b70c7b910d8d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/effect/externalpertechniquedata.h"
+          },
+          "hashes": {
+            "sha-256": "927e0e153fc82f1fcaf5b03dcf03d2157c58f36e10e79e61a9b71aaa1da0401a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/shaderactions/shaderaction.h"
+          },
+          "hashes": {
+            "sha-256": "eae08333634c3bd9c162a1594a39717d9786c419f06ed8e29d86501a41acf2b5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/shaderactions/sa_bind_resource.h"
+          },
+          "hashes": {
+            "sha-256": "964316c7fbb54302b59a4c974d0620ddbd79ffcdfeb6198d944e07be6574b603"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/shaderactions/setperobjectconstantsshaderaction.h"
+          },
+          "hashes": {
+            "sha-256": "115cd7f1d7d1284279897f05609a7a52df1ddc0d84d018ad3a4362901d80a899"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/render/shaderactions/setpermaterialconstantsshaderaction.h"
+          },
+          "hashes": {
+            "sha-256": "c973a26a49aade287f6dc41c9b00636813a47c303768cebce38710c6b87090ac"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/effect/glslattributes.h"
+          },
+          "hashes": {
+            "sha-256": "bfbad697885d433d09da148b842fa02838c90b9096b7e664aed5d6ed14661758"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/events/component.h"
+          },
+          "hashes": {
+            "sha-256": "a8388f9dd0688e2c7bf50e5106bc346123abb2981f39002e2584c336545c8519"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/lua/typedefs.h"
+          },
+          "hashes": {
+            "sha-256": "fbce9f41d1f8fca8953990fe041685ea0f0243537496f3bf0a90d8289c70d673"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/mesh.h"
+          },
+          "hashes": {
+            "sha-256": "1083a5ff3f00170ecf89687261b89091acb92633fa876fe3cd2bb76a9441c2dc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/geometry/meshcpu/meshcpu.h"
+          },
+          "hashes": {
+            "sha-256": "07cc3867019b8cfbae37c00698942a6a8ec4db9908b3e43a7ebb58c57e4f2e78"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/skeletoninstance.h"
+          },
+          "hashes": {
+            "sha-256": "781c8640fc186b40122fadc2a8e317e19b4e4dff39904ed766a07d7b0a33b1af"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/skeleton.h"
+          },
+          "hashes": {
+            "sha-256": "7e06977b184767bced13153f056231204e65a0665919df5cf91b61d0e0b7b419"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/gpubuffers/vertexbuffergpumanager.h"
+          },
+          "hashes": {
+            "sha-256": "2097e034a0b4d70298a9c0d3a08201ad6865a9e5162dd45f12d7c03706efba85"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/utils/handlestohandlemap.h"
+          },
+          "hashes": {
+            "sha-256": "314397ce82e1c1e496462cdd37422d00d1918c4c27c2f07d2cab9397d56a0710"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/debugrenderer.h"
+          },
+          "hashes": {
+            "sha-256": "4d3c8afbf8fcf96f12fcb7d4cd3103ed9fb4aaed52e02954d1a24ea939690ca5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/scenenode.h"
+          },
+          "hashes": {
+            "sha-256": "abccda152834bf627fc66f72cbc6d84755ea99c81440712666e48a7ad26a4b02"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/light.h"
+          },
+          "hashes": {
+            "sha-256": "783431b7186255c632b404438c3b271b5a8ea8afecbe2973618bdcb4b7abc0d9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/lua/luaenvironment.h"
+          },
+          "hashes": {
+            "sha-256": "7de4d7bb60ce2727e339c7f6ea3ab5244a7ac5e7a117e0bc487b6ce7d5aa66a4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lua.h"
+          },
+          "hashes": {
+            "sha-256": "9a8ee0cb834877ad723a6bd29f92385376dea5f012d32f9e181388c33820c5a3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/luaconf.h"
+          },
+          "hashes": {
+            "sha-256": "f4cca7833b245e05a2fe09d77f013a1a4c0762f68cf4f6857ea1a9c51caeedab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lualib.h"
+          },
+          "hashes": {
+            "sha-256": "fdc28369da6fffb836b744b8a6d4b78d386e2b7348247f5cf3246b421d9f0439"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lauxlib.h"
+          },
+          "hashes": {
+            "sha-256": "82d7bcc075308fd1dcee8a8766ab69cda6945624fc4899021e5e971717df1b59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/luasocket.h"
+          },
+          "hashes": {
+            "sha-256": "6e20bebbe4f5f50444e8a4796127246e92184a11b7f0c1d9d99d1fc7ce250f91"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/gpubuffers/animsetbuffergpu.h"
+          },
+          "hashes": {
+            "sha-256": "9688c993eef0c3966c0103ece6782ea28fc89dfc9bd8afcbf6ab6f1619ea38e0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/sh_draw.h"
+          },
+          "hashes": {
+            "sha-256": "cb2646fd0672e397891c91a7d3592be4c9472e2f8e879178c301011dd384fdaf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/scene/defaultanimationsm.h"
+          },
+          "hashes": {
+            "sha-256": "75120744118b44dbee7e7e4ac8eb4085a54ddfbfce09471a526e4bb104ed72fd"
+          }
+        }
+      ]
+    }
+  ]
+}

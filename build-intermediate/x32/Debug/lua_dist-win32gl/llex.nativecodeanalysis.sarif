@@ -1,0 +1,147 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/llex.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "ab22c6dc748a912347d4d6653f47385c742c6afebc5907aaaa2d0fb340326baa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lua.h"
+          },
+          "hashes": {
+            "sha-256": "9a8ee0cb834877ad723a6bd29f92385376dea5f012d32f9e181388c33820c5a3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/luaconf.h"
+          },
+          "hashes": {
+            "sha-256": "f4cca7833b245e05a2fe09d77f013a1a4c0762f68cf4f6857ea1a9c51caeedab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/ldo.h"
+          },
+          "hashes": {
+            "sha-256": "be1970358a771004937d263282326daab04277a4ea63c0e518e52a2a41d5bcf2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lobject.h"
+          },
+          "hashes": {
+            "sha-256": "6ea53c1bcdaabb4bdbe02287eb3b3fddbac497d7642147395f49646542186b03"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/llimits.h"
+          },
+          "hashes": {
+            "sha-256": "f0e369d46b79026107f4b7ac54d3ee70b15e9482d8e05f5cc16154600bae336c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lstate.h"
+          },
+          "hashes": {
+            "sha-256": "620cb6779a368c9c083e91bafd5a014c3c3c02951b5d5d4b10e59725c1d2ea48"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/ltm.h"
+          },
+          "hashes": {
+            "sha-256": "dd24d1e73f109bbea9a97940b68c0e7a968ce0e3b3b76e7210b7e701c2bdf891"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lzio.h"
+          },
+          "hashes": {
+            "sha-256": "716d05b89824c09dbd7daf4ce31244131b4adceff19a46065a41fc0379b46aab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lmem.h"
+          },
+          "hashes": {
+            "sha-256": "465e212c1cf0c25d750f20ac9cd6095dad1c3aa23f34724c9492ac733654a22b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/llex.h"
+          },
+          "hashes": {
+            "sha-256": "c86e68a0dc2a9692462730a7d3bde6bec2e3e13a9192f420340505cba4167015"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lparser.h"
+          },
+          "hashes": {
+            "sha-256": "398b81305656d8f0a9827943d7ab77e6ccaf06794d129a0dfff3532389688d4e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lstring.h"
+          },
+          "hashes": {
+            "sha-256": "845244bef3dfb35e323503cd57b3be0a038e73a9b041d733f4c1f427a5b93b81"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lgc.h"
+          },
+          "hashes": {
+            "sha-256": "42fe93edf3a4bf7938a6adb18882872a59b2de9c44f5e962ff2109729286b3a6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/ltable.h"
+          },
+          "hashes": {
+            "sha-256": "a93a3ab6d8d515c9086eacc8967c236daa68064d488185d885ea48900d22dcf9"
+          }
+        }
+      ]
+    }
+  ]
+}

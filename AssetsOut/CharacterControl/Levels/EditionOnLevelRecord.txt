@@ -1,0 +1,1 @@
+LevelLoader.CreateGameObject("PEObject45_nazi_rep",1.0, 0.0, -0.0, 0.0, 0.0, 1.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0, 199.107586, 0.0, -0.0, 1.0, 'ccontrollvl0.x_PEObject45_nazi_.lua', 'CharacterControl',0x2bda3070, 0x2bfc11e4, 0x9209b8e8, 0x560d92e3)

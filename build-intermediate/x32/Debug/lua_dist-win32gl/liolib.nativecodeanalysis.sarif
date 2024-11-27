@@ -1,0 +1,490 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'p'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                },
+                "region": {
+                  "startLine": 356,
+                  "startColumn": 11,
+                  "endLine": 356,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "g_read",
+                  "decoratedName": "g_read",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 336,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 337,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 338,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 339,
+                            "startColumn": 3
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 340,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 345,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 346,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 347,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 347,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 348,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 353,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 354,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "'p' may be NULL (Skip this loop)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'p' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'f' could be '0':  this does not adhere to the specification for the function 'ferror'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                },
+                "region": {
+                  "startLine": 398,
+                  "startColumn": 7,
+                  "endLine": 398,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "io_readline",
+                  "decoratedName": "io_readline",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 393,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 394,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 395,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "'f' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 396,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 397,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'f' is an In/Out argument to 'read_line' (declared on line 295)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 398,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'f' is an In/Out argument to 'ferror' (declared at d:\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h:171)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 398,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'ferror(f)' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+                          },
+                          "region": {
+                            "startLine": 398,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'f' should not be NULL, because this is not consistent with the SAL annotation on 'ferror'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/lua_dist/src/liolib.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "33311a7cb00c7679fce0e96274ec356e4aed6eb975aa5887293df25313b76707"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lua.h"
+          },
+          "hashes": {
+            "sha-256": "9a8ee0cb834877ad723a6bd29f92385376dea5f012d32f9e181388c33820c5a3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/luaconf.h"
+          },
+          "hashes": {
+            "sha-256": "f4cca7833b245e05a2fe09d77f013a1a4c0762f68cf4f6857ea1a9c51caeedab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lauxlib.h"
+          },
+          "hashes": {
+            "sha-256": "82d7bcc075308fd1dcee8a8766ab69cda6945624fc4899021e5e971717df1b59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lualib.h"
+          },
+          "hashes": {
+            "sha-256": "fdc28369da6fffb836b744b8a6d4b78d386e2b7348247f5cf3246b421d9f0439"
+          }
+        }
+      ]
+    }
+  ]
+}

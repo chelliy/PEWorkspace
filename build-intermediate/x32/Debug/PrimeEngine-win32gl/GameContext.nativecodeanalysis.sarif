@@ -1,0 +1,92 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'MemoryPool::m_freeBlockList' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/MemoryManagement/MemoryPool.h"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MemoryPool::{ctor}",
+                  "decoratedName": "??0MemoryPool@@AAE@II@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MemoryPool::m_freeBlockList"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/CSCI522/PEWorkspace/Code/PrimeEngine/MemoryManagement/MemoryPool.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0edbd4cb245e2d17aa5987c7d7049c65fc948fbb2d3da0d6a264ba3899205536"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/game/common/gamecontext.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "251a4fa6dd1a58028d94026a72ace70b5038ca459c2d52415f170f64a91891ea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/apiabstractiondefines.h"
+          },
+          "hashes": {
+            "sha-256": "36773c3305db021b95e271937c2a7d7db9fa92a368be0109d760c28ac35d6583"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/game/common/gamecontext.h"
+          },
+          "hashes": {
+            "sha-256": "51ade24b6ef277db66c4d8954aedb79c0c69ed93cce56111ba678660b9ed2725"
+          }
+        }
+      ]
+    }
+  ]
+}

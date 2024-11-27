@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\CSCI522\PEWorkspace\Code\PrimeEngine\MemoryManagement\</FILEPATH>
+      <FILENAME>MemoryPool.h</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'MemoryPool::m_freeBlockList' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>MemoryPool::{ctor}</FUNCTION>
+    <DECORATED>??0MemoryPool@@AAE@II@Z</DECORATED>
+    <FUNCLINE>80</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>MemoryPool::m_freeBlockList</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

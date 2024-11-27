@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\CSCI522\PEWorkspace\Code\luasocket_dist\src\</FILEPATH>
+      <FILENAME>wsocket.c</FILENAME>
+      <LINE>364</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>6303</DEFECTCODE>
+    <DESCRIPTION>Format string mismatch.</DESCRIPTION>
+    <FUNCTION>socket_localaddr</FUNCTION>
+    <DECORATED>socket_localaddr</DECORATED>
+    <FUNCLINE>350</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

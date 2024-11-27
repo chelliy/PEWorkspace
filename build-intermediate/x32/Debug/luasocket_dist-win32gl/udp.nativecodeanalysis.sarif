@@ -1,0 +1,131 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34120.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/udp.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "258c169991ccc2ecc549839d243cc6e8414797b569351852731a143b6f5b654f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lua.h"
+          },
+          "hashes": {
+            "sha-256": "9a8ee0cb834877ad723a6bd29f92385376dea5f012d32f9e181388c33820c5a3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/luaconf.h"
+          },
+          "hashes": {
+            "sha-256": "f4cca7833b245e05a2fe09d77f013a1a4c0762f68cf4f6857ea1a9c51caeedab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/lua_dist/src/lauxlib.h"
+          },
+          "hashes": {
+            "sha-256": "82d7bcc075308fd1dcee8a8766ab69cda6945624fc4899021e5e971717df1b59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/auxiliar.h"
+          },
+          "hashes": {
+            "sha-256": "a5b220a8bb2b758aabc82defd9871fd01efb1fcb7cc57233f42e408a63dbf9ee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/socket.h"
+          },
+          "hashes": {
+            "sha-256": "558feba053c01e1b6d223f0cb11a6c455d57d69896c02d0830bf208ae12ce60f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/primeengine/apiabstraction/apiabstractiondefines.h"
+          },
+          "hashes": {
+            "sha-256": "36773c3305db021b95e271937c2a7d7db9fa92a368be0109d760c28ac35d6583"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/io.h"
+          },
+          "hashes": {
+            "sha-256": "d0a76090c9222f78ff83afa7a0bc383991e046d6ee657b9c6c2b3f68e647de01"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/timeout.h"
+          },
+          "hashes": {
+            "sha-256": "a9bd1b4a4faf4e4c6b942aa80072fc6bb141e08bddf6f381ead53caa329d83fb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/wsocket.h"
+          },
+          "hashes": {
+            "sha-256": "d9b8e7e783aae7e114aa783e2e08e676a0aa51108205603e92078e304e2e65be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/inet.h"
+          },
+          "hashes": {
+            "sha-256": "ab6e57444dd4c755452358b91e1658680c8fab877bd9a62faf2627cab6465834"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/options.h"
+          },
+          "hashes": {
+            "sha-256": "079ab3186b1f120ea64fa9296b45624a5d9288ca36f9ea39ed593dc4e2ef4c52"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/csci522/peworkspace/code/luasocket_dist/src/udp.h"
+          },
+          "hashes": {
+            "sha-256": "8d3275b559ac79d314a67332f27f453c264635452bc4bb619756116eb4b5c0f9"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\CSCI522\PEWorkspace\Code\lua_dist\src\</FILEPATH>
+      <FILENAME>lcode.c</FILENAME>
+      <LINE>111</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'luaP_opmodes'.</DESCRIPTION>
+    <FUNCTION>getjumpcontrol</FUNCTION>
+    <DECORATED>getjumpcontrol</DECORATED>
+    <FUNCLINE>109</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\CSCI522\PEWorkspace\Code\lua_dist\src\</FILEPATH>
+        <FILENAME>lcode.c</FILENAME>
+        <LINE>110</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\CSCI522\PEWorkspace\Code\lua_dist\src\</FILEPATH>
+        <FILENAME>lcode.c</FILENAME>
+        <LINE>111</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '&lt;branch condition&gt;' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\CSCI522\PEWorkspace\Code\lua_dist\src\</FILEPATH>
+        <FILENAME>lcode.c</FILENAME>
+        <LINE>111</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid read from 'luaP_opmodes[63]', (readable range is 0 to 37)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
