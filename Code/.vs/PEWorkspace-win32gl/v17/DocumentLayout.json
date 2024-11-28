@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\CSCI522\\PEWorkspace\\Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06E2EBAE-F206-3B2F-1B52-20BF07D6394D}|CharacterControl-win32gl.vcxproj|D:\\CSCI522\\PEWorkspace\\Code\\CharacterControl\\Characters\\SoldierNPCMovementSM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{06E2EBAE-F206-3B2F-1B52-20BF07D6394D}|CharacterControl-win32gl.vcxproj|solutionrelative:CharacterControl\\Characters\\SoldierNPCMovementSM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{CB5149CD-37B3-26DB-C020-6D8D2C815D9A}|PrimeEngine-win32gl.vcxproj|D:\\CSCI522\\PEWorkspace\\Code\\PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CB5149CD-37B3-26DB-C020-6D8D2C815D9A}|PrimeEngine-win32gl.vcxproj|solutionrelative:PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06E2EBAE-F206-3B2F-1B52-20BF07D6394D}|CharacterControl-win32gl.vcxproj|D:\\CSCI522\\PEWorkspace\\Code\\CharacterControl\\Characters\\SoldierNPCMovementSM.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{06E2EBAE-F206-3B2F-1B52-20BF07D6394D}|CharacterControl-win32gl.vcxproj|solutionrelative:CharacterControl\\Characters\\SoldierNPCMovementSM.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB5149CD-37B3-26DB-C020-6D8D2C815D9A}|PrimeEngine-win32gl.vcxproj|D:\\CSCI522\\PEWorkspace\\Code\\PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CB5149CD-37B3-26DB-C020-6D8D2C815D9A}|PrimeEngine-win32gl.vcxproj|solutionrelative:PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{06E2EBAE-F206-3B2F-1B52-20BF07D6394D}|CharacterControl-win32gl.vcxproj|D:\\CSCI522\\PEWorkspace\\Code\\CharacterControl\\Characters\\SoldierNPCMovementSM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{06E2EBAE-F206-3B2F-1B52-20BF07D6394D}|CharacterControl-win32gl.vcxproj|solutionrelative:CharacterControl\\Characters\\SoldierNPCMovementSM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06E2EBAE-F206-3B2F-1B52-20BF07D6394D}|CharacterControl-win32gl.vcxproj|D:\\CSCI522\\PEWorkspace\\Code\\CharacterControl\\Characters\\SoldierNPCAnimationSM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -104,7 +104,7 @@
               "RelativeDocumentMoniker": "CharacterControl\\Characters\\SoldierNPCMovementSM.h",
               "ToolTip": "D:\\CSCI522\\PEWorkspace\\Code\\CharacterControl\\Characters\\SoldierNPCMovementSM.h",
               "RelativeToolTip": "CharacterControl\\Characters\\SoldierNPCMovementSM.h",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-03T11:02:52.341Z",
               "EditorCaption": ""
@@ -173,7 +173,7 @@
         },
         {
           "DockedWidth": 331,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -185,18 +185,17 @@
               "RelativeToolTip": "PrimeEngine\\Physics\\PhysicsComponent.cpp",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAE4AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-27T07:14:27.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T07:14:27.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SkeletonCPU.cpp",
               "DocumentMoniker": "D:\\CSCI522\\PEWorkspace\\Code\\PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp",
               "RelativeDocumentMoniker": "PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp",
               "ToolTip": "D:\\CSCI522\\PEWorkspace\\Code\\PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp",
               "RelativeToolTip": "PrimeEngine\\Geometry\\SkeletonCPU\\SkeletonCPU.cpp",
-              "ViewState": "AgIAANcAAAAAAAAAAADwvwUBAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAAYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-24T00:36:55.21Z",
               "EditorCaption": ""
@@ -211,18 +210,17 @@
               "RelativeToolTip": "CharacterControl\\Characters\\SoldierNPCAnimationSM.cpp",
               "ViewState": "AgIAAHgAAAAAAAAAAAAAAG0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-03T10:56:00.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T10:56:00.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SoldierNPCMovementSM.cpp",
               "DocumentMoniker": "D:\\CSCI522\\PEWorkspace\\Code\\CharacterControl\\Characters\\SoldierNPCMovementSM.cpp",
               "RelativeDocumentMoniker": "CharacterControl\\Characters\\SoldierNPCMovementSM.cpp",
               "ToolTip": "D:\\CSCI522\\PEWorkspace\\Code\\CharacterControl\\Characters\\SoldierNPCMovementSM.cpp",
               "RelativeToolTip": "CharacterControl\\Characters\\SoldierNPCMovementSM.cpp",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAAANgAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAADwv9gAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-28T06:34:51.37Z",
               "EditorCaption": ""

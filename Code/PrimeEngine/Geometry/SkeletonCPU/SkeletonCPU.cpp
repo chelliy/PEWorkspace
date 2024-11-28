@@ -248,15 +248,18 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 				//	a0.m_translation.m_z,
 				//	a0.m_translation.m_w
 				//	);
-				a0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a0.m_quat;
-
+				//a0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a0.m_quat;
+				a0.m_quat.m_x = -a0.m_quat.m_x;
+				a0.m_quat.m_z = -a0.m_quat.m_z;
 				//b0.m_translation = Vector4(
 				//	-b0.m_translation.m_y,
 				//	b0.m_translation.m_x,
 				//	b0.m_translation.m_z,
 				//	b0.m_translation.m_w
 				//);
-				b0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b0.m_quat;
+				//b0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b0.m_quat;
+				b0.m_quat.m_x = -b0.m_quat.m_x;
+				b0.m_quat.m_z = -b0.m_quat.m_z;
 
 			}
 		}
@@ -291,15 +294,19 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 					//	a1.m_translation.m_z,
 					//	a1.m_translation.m_w
 					//);
-					a1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a1.m_quat;
+					//a1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a1.m_quat;
 
+					a1.m_quat.m_x = -a1.m_quat.m_x;
+					a1.m_quat.m_z = -a1.m_quat.m_z;
 					//b1.m_translation = Vector4(
 					//	-b1.m_translation.m_y,
 					//	b1.m_translation.m_x,
 					//	b1.m_translation.m_z,
 					//	b1.m_translation.m_w
 					//);
-					b1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b1.m_quat;
+					//b1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b1.m_quat;
+					b1.m_quat.m_x = -b1.m_quat.m_x;
+					b1.m_quat.m_z = -b1.m_quat.m_z;
 
 				}
 			}
@@ -341,15 +348,19 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 						//	a2.m_translation.m_z,
 						//	a2.m_translation.m_w
 						//);
-						a2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a2.m_quat;
+						//a2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a2.m_quat;
 
+						a2.m_quat.m_x = -a2.m_quat.m_x;
+						a2.m_quat.m_z = -a2.m_quat.m_z;
 						//b2.m_translation = Vector4(
 						//	-b2.m_translation.m_y,
 						//	b2.m_translation.m_x,
 						//	b2.m_translation.m_z,
 						//	b2.m_translation.m_w
 						//);
-						b2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b2.m_quat;
+						//b2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b2.m_quat;
+						b2.m_quat.m_x = -b2.m_quat.m_x;
+						b2.m_quat.m_z = -b2.m_quat.m_z;
 
 					}
 				}
