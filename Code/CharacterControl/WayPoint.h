@@ -27,6 +27,7 @@ struct Event_CREATE_WAYPOINT : public PE::Events::Event
 	int m_highCover;
 	int m_jumpStart;
 	int m_jumpEnd;
+	int m_wallOnRight;
 	int m_preStartDistance;
 
 	PEUUID m_peuuid; // unique object id
@@ -51,6 +52,7 @@ struct WayPoint : public PE::Components::Component
 	int m_highCover;
 	int m_jumpStart;
 	int m_jumpEnd;
+	int m_wallOnRight;
 	int m_preStartDistance;
 };
 }; // namespace Components

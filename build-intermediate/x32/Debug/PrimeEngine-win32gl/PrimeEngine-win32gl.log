@@ -1,3 +1,72 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(541,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build.
+  EffectManager.cpp
+  ExternalPerTechniqueData.cpp
+  AnimSetBufferGPU.cpp
+  VertexBufferGPU.cpp
+  VertexBufferGPUManager.cpp
+  GameThreadJob.cpp
+  ClientGame.cpp
+  GlobalRegistry.cpp
+  ServerGame.cpp
+  AnimationCPU.cpp
+  AnimationSetCPU.cpp
+  AnimationSetGPUManager.cpp
   SkeletonCPU.cpp
+  EventDataCreators.cpp
+  PhysicsJob.cpp
+  RenderJob.cpp
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\AnimationCPU.cpp(47,38): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(245,39): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(245,28): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(246,39): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(246,28): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(279,40): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(279,29): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(280,40): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(280,29): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(320,41): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(320,30): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(321,41): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Geometry\SkeletonCPU\SkeletonCPU.cpp(321,30): warning C4305: 'argument': truncation from 'double' to 'const PrimitiveTypes::Float32'
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\APIAbstraction\GPUBuffers\VertexBufferGPU.cpp(805,31): warning C4018: '<': signed/unsigned mismatch
+  SA_CopyInto_SysMem_FromInstancedObjectsAnimationCSReduceResult.cpp
+  SA_SetAndBind_ConstResource_InstancedObjectsAnimationPalettes.cpp
+  SA_SetAndBind_ConstResource_PerInstanceData.cpp
+  SA_SetAndBind_ConstResource_SingleObjectAnimationPalette.cpp
+  SetPerObjectConstantsShaderAction.cpp
+  DefaultAnimationSM.cpp
+  LineMesh.cpp
+  Mesh.cpp
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\GameThreadJob.cpp(318,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\GameThreadJob.cpp(329,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\GameThreadJob.cpp(354,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  MeshInstance.cpp
+  MeshManager.cpp
+  SH_DRAW.cpp
+  SceneNode.cpp
+  Skeleton.cpp
+  SkeletonInstance.cpp
+  TextMesh.cpp
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\LineMesh.cpp(95,27): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(364,21): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(390,41): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(393,56): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(428,22): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(454,25): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(441,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(479,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\DefaultAnimationSM.cpp(507,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\Mesh.cpp(114,76): warning C4474: 'sprintf' : too many arguments passed for format string
+      D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\Mesh.cpp(114,76):
+      placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\Mesh.cpp(106,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\Mesh.cpp(114,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\Mesh.cpp(278,22): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\MeshManager.cpp(44,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\MeshManager.cpp(96,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\Skeleton.cpp(196,35): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\SH_DRAW.cpp(180,20): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\SH_DRAW.cpp(219,35): warning C4018: '<': signed/unsigned mismatch
+D:\CSCI522\PEWorkspace\Code\PrimeEngine\Scene\SH_DRAW.cpp(487,57): warning C4018: '<': signed/unsigned mismatch
   PrimeEngine-win32gl.vcxproj -> D:\CSCI522\PEWorkspace\build\PrimeEngine-win32gl.lib

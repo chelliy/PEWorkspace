@@ -163,6 +163,9 @@
     <Filter Include="AssetsOut\Default\IndexBuffers">
       <UniqueIdentifier>{D8F2FA6A-C418-C5D1-AD5E-4A9D9923EA9D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AssetsOut\Default\Levels">
+      <UniqueIdentifier>{7E5F105B-6A84-5FDB-93CF-446B7F535EF9}</UniqueIdentifier>
+    </Filter>
     <Filter Include="AssetsOut\Default\MaterialSets">
       <UniqueIdentifier>{C1850BAC-ADAB-D512-96F1-5ADE82B6FADE}</UniqueIdentifier>
     </Filter>
@@ -2638,6 +2641,81 @@
     <None Include="..\AssetsOut\Default\IndexBuffers\soldier.x_soldiermesh_index_buffer.bufa">
       <Filter>AssetsOut\Default\IndexBuffers</Filter>
     </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject11_polyS.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject12_pPlan.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject15_tArro.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject16_tArro.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject17_pCar.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject19_tArro.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject20_tArro.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject21_tArro.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject23_trans.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject24_pPlan.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject25_trans.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject26_trans.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject27_trans.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject28_pPlan.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject29_trans.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject30_pPlan.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject31_trans.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject32_TImro.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject33_Tstre.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject42_Tspot.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject54_Vampi.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject56_tArro.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject6_Tstree.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\TESTING.x_PEObject8_TspotR.lua">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\Default\Levels\testing.x_level.levela">
+      <Filter>AssetsOut\Default\Levels</Filter>
+    </None>
     <None Include="..\AssetsOut\Default\MaterialSets\Violin.mseta">
       <Filter>AssetsOut\Default\MaterialSets</Filter>
     </None>
@@ -3371,6 +3449,15 @@
       <Filter>AssetsOut\TESTING\Levels</Filter>
     </None>
     <None Include="..\AssetsOut\TESTING\Levels\TESTING.x_PEObject52_nazi_.lua">
+      <Filter>AssetsOut\TESTING\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\TESTING\Levels\TESTING.x_PEObject53_Vampi.lua">
+      <Filter>AssetsOut\TESTING\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\TESTING\Levels\TESTING.x_PEObject54_Vampi.lua">
+      <Filter>AssetsOut\TESTING\Levels</Filter>
+    </None>
+    <None Include="..\AssetsOut\TESTING\Levels\TESTING.x_PEObject56_tArro.lua">
       <Filter>AssetsOut\TESTING\Levels</Filter>
     </None>
     <None Include="..\AssetsOut\TESTING\Levels\TESTING.x_PEObject6_Tstree.lua">

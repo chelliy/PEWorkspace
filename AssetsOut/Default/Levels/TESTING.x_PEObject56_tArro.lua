@@ -15,6 +15,6 @@ args['needToRunToThisWaypoint'] = 0
 
 args['jumpStart'] = 1
 
-args['preStartDistance'] = 1
+args['preStartDistance'] = 0
 
 end -- required

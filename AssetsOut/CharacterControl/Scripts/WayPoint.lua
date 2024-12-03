@@ -39,6 +39,11 @@ function runScript(args)
         jumpEnd = args['jumpEnd']
     end
 
+    local wallOnRight = 0
+    if args['wallOnRight'] ~= nil then
+        wallOnRight = args['wallOnRight']
+    end
+
     local preStartDistance = 0
     if args['preStartDistance'] ~= nil then
         preStartDistance = args['preStartDistance']
@@ -52,6 +57,7 @@ function runScript(args)
         highCover,
         jumpStart,
         jumpEnd,
+        wallOnRight,
         preStartDistance,
         pos[1], pos[2], pos[3],
         u[1], u[2], u[3],

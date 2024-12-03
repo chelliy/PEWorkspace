@@ -34,7 +34,7 @@ int Event_CREATE_WAYPOINT::l_Construct(lua_State* luaVM)
 
 	// get arguments from stack
 	int numArgs, numArgsConst;
-	numArgs = numArgsConst = 21;
+	numArgs = numArgsConst = 22;
 
 	const char* wayPointName = lua_tostring(luaVM, -numArgs--);
 	const char* nextWayPointName = lua_tostring(luaVM, -numArgs--);
@@ -58,6 +58,10 @@ int Event_CREATE_WAYPOINT::l_Construct(lua_State* luaVM)
 	int jumpEnd = (int)lua_tonumber(luaVM, -numArgs--);
 
 	pEvt->m_jumpEnd = jumpEnd;
+
+	int wallOnRight = (int)lua_tonumber(luaVM, -numArgs--);
+
+	pEvt->m_wallOnRight = wallOnRight;
 
 	int preStartDistance = (int)lua_tonumber(luaVM, -numArgs--);
 
@@ -110,6 +114,7 @@ WayPoint::WayPoint(PE::GameContext &context, PE::MemoryArena arena, PE::Handle h
 	m_highCover = pEvt->m_highCover;
 	m_jumpStart = pEvt->m_jumpStart;
 	m_jumpEnd = pEvt->m_jumpEnd;
+	m_wallOnRight = pEvt->m_wallOnRight;
 	m_preStartDistance = pEvt->m_preStartDistance;
 
 	m_base = pEvt->m_base;

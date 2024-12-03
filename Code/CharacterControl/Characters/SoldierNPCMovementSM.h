@@ -25,6 +25,7 @@ struct SoldierNPCMovementSM_Event_MOVE_TO : public PE::Events::Event {
 	bool m_highCover;
 	bool m_jumpStart;
 	bool m_jumpEnd;
+	bool m_wallOnRight;
 	int m_preStartDistance = 0;
 };
 
@@ -120,13 +121,20 @@ struct SoldierNPCMovementSM : public PE::Components::Component
 	bool m_highCover = false;
 	bool m_jumpStart = false;
 	bool m_jumpEnd = false;
-	bool m_jumpActived = false;
+	bool m_wallOnRight = false;
 	int m_preStartDistance = 0;
-	States m_state;
+
+	bool m_jumpWaiting = false;
+	bool m_jumped = false;
+	bool m_landingAnimationPlayNeed = false;
+	bool m_floatingAnimationPlayNeed = false;
 	float m_timeCounter = 0;
 	float m_jumpTimeCounter = 0;
+	float m_jumpStartAnimationCounter = 0;
 	Vector3 initialVerticalVelocity = Vector3(0, 10, 0);
 	Vector3 lastTimeDisplacement = Vector3(0, 0, 0);
+
+	States m_state;
 };
 
 };

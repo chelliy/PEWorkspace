@@ -16,8 +16,11 @@ PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_STOP, Event);
 PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_WALK, Event);
 
 PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_RUN, Event);
+//
+PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_TAKECOVER, Event); 
 
-PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_TAKECOVER, Event);
+SoldierNPCAnimSM_Event_TAKECOVER::SoldierNPCAnimSM_Event_TAKECOVER()
+	: m_wallOnRight(false) { };
 
 PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_JUMPCOVER, Event);
 
@@ -27,9 +30,14 @@ PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_LANDING, Event);
 
 PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_HIGHCOVER, Event);
 
+SoldierNPCAnimSM_Event_HIGHCOVER::SoldierNPCAnimSM_Event_HIGHCOVER()
+	: m_wallOnRight(false) { };
+
 PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_LOWCOVER, Event);
 
-//PE_IMPLEMENT_CLASS1(SoldierNPCAnimSM_Event_STAND_SHOOT, Event);
+SoldierNPCAnimSM_Event_LOWCOVER::SoldierNPCAnimSM_Event_LOWCOVER()
+	: m_wallOnRight(false) { };
+
 
 }
 namespace Components{
@@ -95,10 +103,19 @@ void SoldierNPCAnimationSM::do_SoldierNPCAnimSM_Event_TAKECOVER(PE::Events::Even
 {
 	if (m_curId != SoldierNPCAnimationSM::TAKECOVER)
 	{
-		m_curId = SoldierNPCAnimationSM::TAKECOVER;
-		setAnimation(0, SoldierNPCAnimationSM::TAKECOVER,
-			0, 0, 1, 1,
-			PE::LOOPING | PE::ROOT_TO_INPLACE);
+		Events::SoldierNPCAnimSM_Event_TAKECOVER* pRealEvt = (Events::SoldierNPCAnimSM_Event_TAKECOVER*)(pEvt);
+		if (!pRealEvt->m_wallOnRight) {
+			m_curId = SoldierNPCAnimationSM::TAKECOVER;
+			setAnimation(0, SoldierNPCAnimationSM::TAKECOVER,
+				0, 0, 1, 1,
+				PE::LOOPING | PE::ROOT_TO_INPLACE);
+		}
+		else {
+			m_curId = SoldierNPCAnimationSM::TAKECOVER;
+			setAnimation(0, SoldierNPCAnimationSM::TAKECOVER,
+				0, 0, 1, 1,
+				PE::LOOPING | PE::ROOT_TO_INPLACE | PE::TAKE_COVER_WHEN_WALL_ON_RIGHT);
+		}
 	}
 }
 
@@ -139,10 +156,19 @@ void SoldierNPCAnimationSM::do_SoldierNPCAnimSM_Event_HIGHCOVER(PE::Events::Even
 {
 	if (m_curId != SoldierNPCAnimationSM::HIGHCOVER)
 	{
-		m_curId = SoldierNPCAnimationSM::HIGHCOVER;
-		setAnimation(0, SoldierNPCAnimationSM::HIGHCOVER,
-			0, 0, 1, 1,
-			PE::LOOPING);
+		Events::SoldierNPCAnimSM_Event_HIGHCOVER* pRealEvt = (Events::SoldierNPCAnimSM_Event_HIGHCOVER*)(pEvt);
+		if (!pRealEvt->m_wallOnRight) {
+			m_curId = SoldierNPCAnimationSM::HIGHCOVER;
+			setAnimation(0, SoldierNPCAnimationSM::HIGHCOVER,
+				0, 0, 1, 1,
+				PE::LOOPING);
+		}
+		else {
+			m_curId = SoldierNPCAnimationSM::HIGHCOVER;
+			setAnimation(0, SoldierNPCAnimationSM::HIGHCOVER,
+				0, 0, 1, 1,
+				PE::LOOPING | PE::TAKE_COVER_WHEN_WALL_ON_RIGHT);
+		}
 	}
 }
 
@@ -150,10 +176,20 @@ void SoldierNPCAnimationSM::do_SoldierNPCAnimSM_Event_LOWCOVER(PE::Events::Event
 {
 	if (m_curId != SoldierNPCAnimationSM::LOWCOVER)
 	{
-		m_curId = SoldierNPCAnimationSM::LOWCOVER;
-		setAnimation(0, SoldierNPCAnimationSM::LOWCOVER,
-			0, 0, 1, 1,
-			PE::LOOPING);
+		Events::SoldierNPCAnimSM_Event_LOWCOVER* pRealEvt = (Events::SoldierNPCAnimSM_Event_LOWCOVER*)(pEvt);
+		if (!pRealEvt->m_wallOnRight) {
+			m_curId = SoldierNPCAnimationSM::LOWCOVER;
+			setAnimation(0, SoldierNPCAnimationSM::LOWCOVER,
+				0, 0, 1, 1,
+				PE::LOOPING);
+		}
+		else {
+			m_curId = SoldierNPCAnimationSM::LOWCOVER;
+			setAnimation(0, SoldierNPCAnimationSM::LOWCOVER,
+				0, 0, 1, 1,
+				PE::LOOPING | PE::TAKE_COVER_WHEN_WALL_ON_RIGHT);
+
+		}
 	}
 }
 

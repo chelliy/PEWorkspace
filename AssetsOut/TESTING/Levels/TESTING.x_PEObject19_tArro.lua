@@ -14,6 +14,9 @@ args['next'] = '4'
 
 args['takingCover'] = 1
 
-args['preStartDistance'] = 5
+args['wallOnRight'] = 1
+
+args['preStartDistance'] = 7
+
 
 end -- required

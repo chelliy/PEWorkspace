@@ -39,7 +39,7 @@ if [ "$OSTYPE" = "$WINNAME" ] ; then
 	#pepython.bat is a script that runs xbox environment setup and then launches python
 	alias pepython="cygstart pepython.bat"
 	export MAYA_DIR="D:\AutoDesk\Maya2022"
-    export VSDIR="C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE"
+    export VSDIR="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE"
     export MAYA_PYTHON_VERSION=2
 else
 	export PREMAKE_PATH=${PYENGINE_WORKSPACE_DIR}${sep}External${sep}CompiledSource${sep}"premake-dev-iphone-xcode4-master"${sep}src

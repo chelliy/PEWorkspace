@@ -39,7 +39,10 @@ struct SoldierNPCAnimSM_Event_RUN : public PE::Events::Event {
 struct SoldierNPCAnimSM_Event_TAKECOVER : public PE::Events::Event {
 	PE_DECLARE_CLASS(SoldierNPCAnimSM_Event_TAKECOVER);
 
-	SoldierNPCAnimSM_Event_TAKECOVER() {}
+	SoldierNPCAnimSM_Event_TAKECOVER();
+	bool m_wallOnRight = false;
+	
+
 };
 
 // sent by movement state machine when a soldier has to run
@@ -67,14 +70,16 @@ struct SoldierNPCAnimSM_Event_LANDING : public PE::Events::Event {
 struct SoldierNPCAnimSM_Event_HIGHCOVER : public PE::Events::Event {
 	PE_DECLARE_CLASS(SoldierNPCAnimSM_Event_HIGHCOVER);
 
-	SoldierNPCAnimSM_Event_HIGHCOVER() {}
+	SoldierNPCAnimSM_Event_HIGHCOVER();
+	bool m_wallOnRight = false;
 };
 
 // sent by movement state machine when a soldier has to run
 struct SoldierNPCAnimSM_Event_LOWCOVER : public PE::Events::Event {
 	PE_DECLARE_CLASS(SoldierNPCAnimSM_Event_LOWCOVER);
 
-	SoldierNPCAnimSM_Event_LOWCOVER() {}
+	SoldierNPCAnimSM_Event_LOWCOVER();
+	bool m_wallOnRight = false;
 };
 
 //// sent by movement state machine when a soldier has to stand shoot

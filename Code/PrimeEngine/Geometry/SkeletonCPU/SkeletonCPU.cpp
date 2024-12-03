@@ -242,24 +242,12 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 			}
 			//if is take cover
 			if (slot0.m_animationIndex == 9 || slot0.m_animationIndex == 10 || slot0.m_animationIndex == 6) {
-				//a0.m_translation = Vector4(
-				//	-a0.m_translation.m_y,
-				//	a0.m_translation.m_x,
-				//	a0.m_translation.m_z,
-				//	a0.m_translation.m_w
-				//	);
-				//a0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a0.m_quat;
-				a0.m_quat.m_x = -a0.m_quat.m_x;
-				a0.m_quat.m_z = -a0.m_quat.m_z;
-				//b0.m_translation = Vector4(
-				//	-b0.m_translation.m_y,
-				//	b0.m_translation.m_x,
-				//	b0.m_translation.m_z,
-				//	b0.m_translation.m_w
-				//);
-				//b0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b0.m_quat;
-				b0.m_quat.m_x = -b0.m_quat.m_x;
-				b0.m_quat.m_z = -b0.m_quat.m_z;
+				a0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a0.m_quat;
+				b0.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b0.m_quat;
+				if ((slot0.m_flags & TAKE_COVER_WHEN_WALL_ON_RIGHT) > 0) {
+					a0.m_scale = Vector4(a0.m_scale.m_x, a0.m_scale.m_y, -a0.m_scale.m_z, a0.m_scale.m_w);
+					b0.m_scale = Vector4(b0.m_scale.m_x, b0.m_scale.m_y, -b0.m_scale.m_z, b0.m_scale.m_w);
+				}
 
 			}
 		}
@@ -287,26 +275,13 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 					a1 = anim0.m_frames[0][jnt.m_index];
 					b1 = anim0.m_frames[0][jnt.m_index];
 				}
-				if (slot0.m_animationIndex == 9 || slot0.m_animationIndex == 10 || slot0.m_animationIndex == 6) {
-					//a1.m_translation = Vector4(
-					//	-a1.m_translation.m_y,
-					//	a1.m_translation.m_x,
-					//	a1.m_translation.m_z,
-					//	a1.m_translation.m_w
-					//);
-					//a1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a1.m_quat;
-
-					a1.m_quat.m_x = -a1.m_quat.m_x;
-					a1.m_quat.m_z = -a1.m_quat.m_z;
-					//b1.m_translation = Vector4(
-					//	-b1.m_translation.m_y,
-					//	b1.m_translation.m_x,
-					//	b1.m_translation.m_z,
-					//	b1.m_translation.m_w
-					//);
-					//b1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b1.m_quat;
-					b1.m_quat.m_x = -b1.m_quat.m_x;
-					b1.m_quat.m_z = -b1.m_quat.m_z;
+				if (slot1.m_animationIndex == 9 || slot1.m_animationIndex == 10 || slot1.m_animationIndex == 6) {
+					a1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a1.m_quat;
+					b1.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b1.m_quat;
+					if ((slot1.m_flags & TAKE_COVER_WHEN_WALL_ON_RIGHT) > 0) {
+						b1.m_scale = Vector4(b1.m_scale.m_x, b1.m_scale.m_y, -b1.m_scale.m_z, b1.m_scale.m_w);
+						a1.m_scale = Vector4(a1.m_scale.m_x, a1.m_scale.m_y, -a1.m_scale.m_z, a1.m_scale.m_w);
+					}
 
 				}
 			}
@@ -341,26 +316,13 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 						a2 = anim0.m_frames[0][jnt.m_index];
 						b2 = anim0.m_frames[0][jnt.m_index];
 					}
-					if (slot0.m_animationIndex == 9 || slot0.m_animationIndex == 10 || slot0.m_animationIndex == 6) {
-						//a2.m_translation = Vector4(
-						//	-a2.m_translation.m_y,
-						//	a2.m_translation.m_x,
-						//	a2.m_translation.m_z,
-						//	a2.m_translation.m_w
-						//);
-						//a2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a2.m_quat;
-
-						a2.m_quat.m_x = -a2.m_quat.m_x;
-						a2.m_quat.m_z = -a2.m_quat.m_z;
-						//b2.m_translation = Vector4(
-						//	-b2.m_translation.m_y,
-						//	b2.m_translation.m_x,
-						//	b2.m_translation.m_z,
-						//	b2.m_translation.m_w
-						//);
-						//b2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b2.m_quat;
-						b2.m_quat.m_x = -b2.m_quat.m_x;
-						b2.m_quat.m_z = -b2.m_quat.m_z;
+					if (slot2.m_animationIndex == 9 || slot2.m_animationIndex == 10 || slot2.m_animationIndex == 6) {
+						a2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * a2.m_quat;
+						b2.m_quat = Quaternion(0.7071, 0, -0.7071, 0) * b2.m_quat;
+						if ((slot2.m_flags & TAKE_COVER_WHEN_WALL_ON_RIGHT) > 0) {
+							b2.m_scale = Vector4(b2.m_scale.m_x, b2.m_scale.m_y, -b2.m_scale.m_z, b2.m_scale.m_w);
+							a2.m_scale = Vector4(a2.m_scale.m_x, a2.m_scale.m_y, -a2.m_scale.m_z, a2.m_scale.m_w);
+						}
 
 					}
 				}

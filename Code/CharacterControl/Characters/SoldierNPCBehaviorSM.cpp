@@ -86,13 +86,6 @@ void SoldierNPCBehaviorSM::do_SoldierNPCMovementSM_Event_TARGET_REACHED(PE::Even
 					pWP = pGameObjectManagerAddon->getWayPoint(pWP->m_nextWayPointName);
 					if (pWP)
 					{
-						//if (pGameObjectManagerAddon->getWayPoint(pWP->m_nextWayPointName)) 
-						//{
-						//	if (rand() % 2 > 0) 
-						//	{
-						//		pWP = pGameObjectManagerAddon->getWayPoint(pWP->m_nextWayPointName);
-						//	}
-						//}
 						StringOps::writeToString(pWP->m_name, m_curPatrolWayPoint, 32);
 
 						PEINFO("Got IN\n");
@@ -105,6 +98,7 @@ void SoldierNPCBehaviorSM::do_SoldierNPCMovementSM_Event_TARGET_REACHED(PE::Even
 						pEvt->m_highCover = pWP->m_highCover > 0;
 						pEvt->m_jumpStart = pWP->m_jumpStart > 0;
 						pEvt->m_jumpEnd = pWP->m_jumpEnd > 0;
+						pEvt->m_wallOnRight = pWP->m_wallOnRight > 0;
 						pEvt->m_preStartDistance = pWP->m_preStartDistance;
 
 						m_hMovementSM.getObject<Component>()->handleEvent(pEvt);
@@ -115,21 +109,6 @@ void SoldierNPCBehaviorSM::do_SoldierNPCMovementSM_Event_TARGET_REACHED(PE::Even
 					else
 					{
 						m_state = IDLE;
-						//m_state = STAND_SHOOT;
-
-						//SoldierNPC* pSol = getFirstParentByTypePtr<SoldierNPC>();
-						//PE::Handle hSoldierSceneNode = pSol->getFirstComponentHandle<PE::Components::SceneNode>();
-						//Matrix4x4 base = hSoldierSceneNode.getObject<PE::Components::SceneNode>()->m_worldTransform;
-
-
-						//PE::Handle h("SoldierNPCMovementSM_Event_STAND_SHOOT", sizeof(SoldierNPCMovementSM_Event_STAND_SHOOT));
-						//Events::SoldierNPCMovementSM_Event_STAND_SHOOT* pEvt = new(h) SoldierNPCMovementSM_Event_STAND_SHOOT(Vector3(m_curTargetX, 0, m_curTargetZ));
-
-						//m_hMovementSM.getObject<Component>()->handleEvent(pEvt);
-
-						//h.release();
-
-
 						// no need to send the event. movement state machine will automatically send event to animation state machine to play idle animation
 					}
 				}
