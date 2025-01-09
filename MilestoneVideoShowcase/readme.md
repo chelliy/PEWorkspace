@@ -1,5 +1,5 @@
 M1: Animated AI traversal behaviour system finished with sevevral exsiting bugs: root animation, fake jump, wrong cover walk animation.
-<video src: "https://www.youtube.com/watch?v=lRwFMpICGE4"></video>
+(https://www.youtube.com/watch?v=lRwFMpICGE4")
 
 M2: All existing bug in M1 solved, current jump is based on physics.
 
