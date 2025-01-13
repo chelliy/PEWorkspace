@@ -24,8 +24,6 @@ LevelLoader.CreateGameObject("PEObject16_tArrow",0.0, 0.0, 1.0, 0.0, 0.0, 1.0, -
 
 LevelLoader.CreateGameObject("PEObject24_pPlane1",1.0, 0.0, -0.0, 0.0, 0.0, 1.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -8.0, 0.0, 2495.0, 1.0, 'TESTING.x_PEObject24_pPlan.lua', 'TESTING',0x60b0498f, 0x1c6711e0, 0xb81d001b, 0x213b583a)
 
-LevelLoader.CreateGameObject("PEObject21_tArrow",0.802985, 0.0, 0.596, 0.0, 0.0, 1.0, -0.0, 0.0, -0.596, -0.0, 0.802985, 0.0, -335.766008, 0.0, -937.395384, 1.0, 'TESTING.x_PEObject21_tArro.lua', 'TESTING',0x90b4a1b0, 0x1c6011e0, 0x91c1001b, 0x213b583a)
-
 LevelLoader.CreateGameObject("PEObject8_TspotRep",1.0, 0.0, 0.0, 0.0, -0.0, 0.004632, 0.999989, 0.0, -0.0, -0.999989, 0.004632, 0.0, 967.250827, 298.425626, -97.932148, 1.0, 'TESTING.x_PEObject8_TspotR.lua', 'TESTING',0x124cf5c0, 0x13a511e0, 0xa20c0025, 0xd3ac504f)
 
 LevelLoader.CreateGameObject("PEObject58_pCar",0.0, 0.0, 1.0, 0.0, 0.0, 1.0, -0.0, 0.0, -1.0, -0.0, 0.0, 0.0, -822.041643, 0.0, 220.098789, 1.0, 'TESTING.x_PEObject58_pCar.lua', 'TESTING',0xca4b2630, 0xae3f11ef, 0xb200e00a, 0xf638768c)
@@ -44,7 +42,7 @@ LevelLoader.CreateGameObject("PEObject28_pPlane1",1.0, 0.0, -0.0, 0.0, 0.0, 1.0,
 
 LevelLoader.CreateGameObject("PEObject27_transf",0.0, 0.0, 1.0, 0.0, 0.0, 1.0, -0.0, 0.0, -1.0, -0.0, 0.0, 0.0, -1747.108453, -52.751, -1302.801904, 1.0, 'TESTING.x_PEObject27_trans.lua', 'TESTING',0xfe55f40f, 0x1c6711e0, 0xb94a001b, 0x213b583a)
 
-LevelLoader.CreateGameObject("PEObject54_Vampire",1.5, 0.0, -0.0, 0.0, 0.0, 1.5, -0.0, 0.0, -0.0, -0.0, 1.5, 0.0, 904.234195, -0.0, 329.04919, 1.0, 'TESTING.x_PEObject54_Vampi.lua', 'TESTING',0x10a7dc40, 0x99c811ef, 0xba08581c, 0xf801aada)
+LevelLoader.CreateGameObject("PEObject54_Vampire",1.5, 0.0, -0.0, 0.0, 0.0, 1.5, -0.0, 0.0, -0.0, -0.0, 1.5, 0.0, 978.108976, 0.0, 134.377729, 1.0, 'TESTING.x_PEObject54_Vampi.lua', 'TESTING',0x10a7dc40, 0x99c811ef, 0xba08581c, 0xf801aada)
 
 LevelLoader.CreateGameObject("PEObject30_pPlane1",1.0, 0.0, -0.0, 0.0, 0.0, 1.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -2494.295318, 0.0, 2488.2724, 1.0, 'TESTING.x_PEObject30_pPlan.lua', 'TESTING',0x74f1004f, 0x1c6911e0, 0x9875001b, 0x213b583a)
 

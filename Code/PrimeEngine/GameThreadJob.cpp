@@ -358,7 +358,7 @@ int ClientGame::runGameFrame()
 				}
 				
 				//debug draw root and grid
-				DebugRenderer::Instance()->createRootLineMesh();// send event while the array is on the stack
+				//DebugRenderer::Instance()->createRootLineMesh();// send event while the array is on the stack
 
 				// call this to potentially generate meshes that were scheduled in debug draw of lines
 				DebugRenderer::Instance()->postPreDraw(m_pContext->m_gameThreadThreadOwnershipMask);
@@ -416,7 +416,7 @@ int ClientGame::runGameFrame()
 		else if (Event_PHYSICS_START::GetClassId() == pGeneralEvt->getClassId())
 		{
 			// physics kick off
-			static bool s_PhysicsOnGameThread = false;
+			static bool s_PhysicsOnGameThread = true;
 			#if PYENGINE_2_0_MULTI_THREADED
 				g_physicsThreadLock.lock();
 
@@ -426,7 +426,7 @@ int ClientGame::runGameFrame()
 				if (!s_PhysicsOnGameThread) // this variable will dynamically keep other thread waiting
 					g_physicsThreadCanStart = true;
 				else
-						runPhysicsThreadSingleFrame(); // tun on game thread
+					runPhysicsThreadSingleFrame(); // tun on game thread
 					g_physicsThreadLock.unlock(); // release render thread lock
 					g_physicsCanStartCV.signal();
 			#else

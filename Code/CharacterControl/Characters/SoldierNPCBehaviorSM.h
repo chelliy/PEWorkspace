@@ -53,6 +53,7 @@ struct SoldierNPCBehaviorSM : public PE::Components::Component
 	float m_curTargetZ = 0;
 	bool positiveX = true;
 	bool positiveZ = true;
+	bool activeFirstTime = true;
 
 };
 

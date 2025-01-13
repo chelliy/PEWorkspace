@@ -3,6 +3,7 @@
 
 #include "PrimeEngine/Events/Component.h"
 #include "PrimeEngine/Math/Matrix4x4.h"
+#include "Events/Events.h"
 
 
 namespace CharacterControl{
@@ -42,6 +43,9 @@ struct WayPoint : public PE::Components::Component
 	WayPoint( PE::GameContext &context, PE::MemoryArena arena, PE::Handle hMyself, const Events::Event_CREATE_WAYPOINT *pEvt);
 
 	virtual void addDefaultComponents() ;
+
+	PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_PRE_RENDER_needsRC)
+	void do_PRE_RENDER_needsRC(PE::Events::Event* pEvt);
 
 	char m_name[32];
 	char m_nextWayPointName[32];

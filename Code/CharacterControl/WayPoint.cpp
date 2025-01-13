@@ -4,11 +4,19 @@
 #include "PrimeEngine/Lua/EventGlue/EventDataCreators.h"
 
 
+#include "PrimeEngine/Render/IRenderer.h"
+#include "PrimeEngine/Scene/DebugRenderer.h"
+#include "ClientGameObjectManagerAddon.h"
+#include "CharacterControlContext.h"
+#include "PrimeEngine/Scene/SceneNode.h"
+#include "PrimeEngine/Render/IRenderer.h"
+
 #include "WayPoint.h"
 
 
 using namespace PE;
 using namespace PE::Components;
+using namespace PE::Events;
 using namespace CharacterControl::Events;
 
 namespace CharacterControl{
@@ -124,8 +132,94 @@ void WayPoint::addDefaultComponents()
 {
 	Component::addDefaultComponents();
 
+	PE_REGISTER_EVENT_HANDLER(Event_PRE_RENDER_needsRC, WayPoint::do_PRE_RENDER_needsRC);
 	// custom methods of this component
 }
+
+
+// this event is executed when thread has RC
+void WayPoint::do_PRE_RENDER_needsRC(PE::Events::Event* pEvt)
+{
+	Event_PRE_RENDER_needsRC* pRealEvent = (Event_PRE_RENDER_needsRC*)(pEvt);
+
+	char buf[80];
+	sprintf(buf, "Waypoint: %s", m_name);
+	DebugRenderer::Instance()->createTextMesh(
+		buf, false, false, true, false, 0,
+		m_base.getPos() + Vector3(0,5,0), 0.01f, pRealEvent->m_threadOwnershipMask);
+
+	Vector3 color(0, 1.0f, 0);
+	Vector3 linepts[] = { m_base.getPos(), color, m_base.getPos() + Vector3(0,4.5,0), color };
+
+	DebugRenderer::Instance()->createLineMesh(false, m_base, &linepts[0].m_x, 2, 0);// send event while the array is on the stack
+
+
+	{
+		//we can also construct points ourself
+		bool sent = false;
+		ClientGameObjectManagerAddon* pGameObjectManagerAddon = (ClientGameObjectManagerAddon*)(m_pContext->get<CharacterControlContext>()->getGameObjectManagerAddon());
+		if (pGameObjectManagerAddon)
+		{
+			WayPoint* pWP = pGameObjectManagerAddon->getWayPoint(m_nextWayPointName);
+			if (pWP)
+			{
+				if (pWP->m_preStartDistance > 0) {
+					//pre start point showcase
+					Vector3 target = pWP->m_base.getPos();
+					Vector3 pos = m_base.getPos();
+
+					Vector3 dir = pos - target;
+					dir.normalize();
+
+					dir *= pWP->m_preStartDistance;
+
+					Vector3 color(1.0f, 0, 1.0f);
+					Vector3 linepts[] = { target, color, target + dir, color };
+
+					DebugRenderer::Instance()->createLineMesh(false, m_base, &linepts[0].m_x, 2, 0);// send event while the array is on the stack
+
+
+					char buf[80];
+					if (pWP->m_takingCover) {
+						if (pWP->m_wallOnRight) {
+							sprintf(buf, "Prestart: Taking Cover Walk when Wall on Right");
+						}else{
+							sprintf(buf, "Prestart: Taking Cover Walk when Wall on Left");
+						}
+					}
+					if (pWP->m_jumpEnd) {
+						sprintf(buf, "Prestart: Jump");
+					}
+					DebugRenderer::Instance()->createTextMesh(
+						buf, false, false, true, false, 0,
+						target + dir + Vector3(0, 4, 0), 0.01f, pRealEvent->m_threadOwnershipMask);
+
+					color = Vector3(1.0f, 0, 0);
+					Vector3 newlinepts[] = { target + dir, color, target + dir + Vector3(0, 3.5, 0), color };
+
+					DebugRenderer::Instance()->createLineMesh(false, m_base, &newlinepts[0].m_x, 2, 0);// send event while the array is on the stack
+				}
+				sent = true;
+			}
+
+			if (m_jumpStart) {
+
+				char buf[80];
+				sprintf(buf, "Prestart: Jump");
+				
+				DebugRenderer::Instance()->createTextMesh(
+					buf, false, false, true, false, 0,
+					m_base.getPos() + Vector3(0, 4, 0), 0.01f, pRealEvent->m_threadOwnershipMask);
+
+			}
+		}
+		if (!sent) // if for whatever reason we didnt retrieve waypoint info, send the event with transform only
+			DebugRenderer::Instance()->createLineMesh(true, m_base, NULL, 0, 0);// send event while the array is on the stack
+	}
+}
+
+
+
 
 }; // namespace Components
 }; // namespace CharacterControl

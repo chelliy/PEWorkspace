@@ -15,6 +15,6 @@ args['takingCover'] = 1
 
 args['highCover'] = 1
 
-args['preStartDistance'] = 7
+args['preStartDistance'] = 6
 
 end -- required

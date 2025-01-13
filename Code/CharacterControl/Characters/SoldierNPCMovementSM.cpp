@@ -340,6 +340,7 @@ void SoldierNPCMovementSM::do_UPDATE(PE::Events::Event *pEvt)
 							m_jumpTimeCounter = 0;
 							m_jumpStartAnimationCounter = 0;
 							m_state = IN_AIR;
+							OutputDebugStringA("Wrong State in Air Triggered\n");
 						}
 						preStartActived = true;
 					}

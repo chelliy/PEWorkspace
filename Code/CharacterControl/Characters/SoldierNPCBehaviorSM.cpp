@@ -233,8 +233,13 @@ void SoldierNPCBehaviorSM::do_UPDATE(PE::Events::Event *pEvt)
 				{
 					if (pGameObjectManagerAddon->getWayPoint(pWP->m_nextWayPointName))
 					{
-
-						pWP = pGameObjectManagerAddon->getWayPoint(pWP->m_nextWayPointName);
+						if (activeFirstTime) {
+							activeFirstTime = false;
+						}
+						else
+						{
+							pWP = pGameObjectManagerAddon->getWayPoint(pWP->m_nextWayPointName);
+						}
 
 					}
 					m_state = PATROLLING_WAYPOINTS;
